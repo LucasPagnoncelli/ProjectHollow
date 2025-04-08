@@ -7,6 +7,7 @@ public class Movimentojogador : MonoBehaviour
 {
     public float velocidadedojogador;
     public Rigidbody2D origidbody2D;
+    public SpriteRenderer ospriterenderer;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -29,6 +30,15 @@ public class Movimentojogador : MonoBehaviour
     {
         float inputdomovimento = Input.GetAxisRaw("Horizontal");
         origidbody2D.linearVelocity = new Vector2(inputdomovimento * velocidadedojogador, origidbody2D.linearVelocity.y);
+
+        if(inputdomovimento > 0)
+        {
+            ospriterenderer.flipX = false;
+        }
+        if(inputdomovimento < 0)
+        {
+            ospriterenderer.flipX = true;
+        }
 
     }
 }
