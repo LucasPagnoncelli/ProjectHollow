@@ -405,7 +405,7 @@ Rigidbody2D:
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1.7
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 9521c35336c12fa4d859ee7abc9cacea, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -480,7 +480,7 @@ Transform:
   m_GameObject: {fileID: 631032006}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.69, y: 0.39999998, z: 0}
+  m_LocalPosition: {x: -3.61, y: -1.41, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
