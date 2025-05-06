@@ -49,6 +49,7 @@ public class Movimentojogador : MonoBehaviour
         {
             ospriterenderer.flipX = true;
         }
+        
 
     }
 
@@ -59,7 +60,7 @@ public class Movimentojogador : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.W) && estanochao == true)
         {
-            origidbody2D.velocity  = Vector2.up * alturadopulo;
+            origidbody2D.linearVelocity  = Vector2.up * alturadopulo;
         }
 
     }
