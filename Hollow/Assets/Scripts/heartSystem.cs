@@ -26,7 +26,7 @@ public class heartSystem : MonoBehaviour
         for (int i = 0; i < coracao.Length; i++)
         {
 
-            if{
+            if (vidaAtual <i){
                 coracao[i].enabled = true;
             }
             else
