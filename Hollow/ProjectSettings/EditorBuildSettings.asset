@@ -12,11 +12,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 924621ed4c7149a49a58c879dc2b85b2
   - enabled: 1
-    path: Assets/Scenes/faseTeste.unity
-    guid: 994ce796260f69d429d6a28ca0d6ba00
+    path: Assets/Scenes/Fase1.unity
+    guid: 6233f091e4e99cc4ebe7ad19751ae1cb
   - enabled: 1
-    path: Assets/Scenes/faseTeste 1.unity
-    guid: c3d0f0aee0e799a46806987553ac2d48
+    path: Assets/Scenes/Fase2.unity
+    guid: 994ce796260f69d429d6a28ca0d6ba00
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

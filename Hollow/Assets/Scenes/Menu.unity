@@ -1456,7 +1456,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdacff2daf062ed46b73db0ea7b1a932, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeDoleveldojogo: faseTeste
+  nomeDoleveldojogo: Fase1
   painelmenuinicial: {fileID: 851829370}
   painelopcoes: {fileID: 313204762}
 --- !u!1 &1618594245
