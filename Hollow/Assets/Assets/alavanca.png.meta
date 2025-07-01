@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: dff741236506cab4d937f431c261915c
+guid: a2ed15dae49cf6e41a7bbadddc6375e3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4583678718531112540
-    second: Piso_Sprite_0
+      213: 1735771879735282622
+    second: alavanca_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Piso_Sprite_0
+      name: alavanca_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 320
-        height: 32
+        width: 256
+        height: 189
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4a17f69ad708360c0800000000000000
-      internalID: -4583678718531112540
+      spriteID: ebbcbbef353b61810800000000000000
+      internalID: 1735771879735282622
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Piso_Sprite_0: -4583678718531112540
+      alavanca_0: 1735771879735282622
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
