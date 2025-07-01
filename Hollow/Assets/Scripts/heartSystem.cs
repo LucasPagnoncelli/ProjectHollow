@@ -1,5 +1,7 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class heartSystem : MonoBehaviour
 {
@@ -26,13 +28,24 @@ public class heartSystem : MonoBehaviour
         for (int i = 0; i < coracao.Length; i++)
         {
 
-            if (vidaAtual >=i){
+            if (vidaAtual > i){
                 coracao[i].enabled = true;
             }
             else
             {
                 coracao[i].enabled = false;
+                deathState();
             }
+        }
+    }
+
+    void deathState()
+    {
+        if (vidaAtual <= 0)
+        {
+            Destroy(gameObject, 0.05f);
+            SceneManager.LoadScene("Menu");
+
         }
     }
 }
