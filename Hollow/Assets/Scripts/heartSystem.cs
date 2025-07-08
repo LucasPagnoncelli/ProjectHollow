@@ -11,6 +11,7 @@ public class heartSystem : MonoBehaviour
     public Image[] coracao;
     public Sprite cheio;
     public Sprite vazio;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -44,7 +45,7 @@ public class heartSystem : MonoBehaviour
         if (vidaAtual <= 0)
         {
             Destroy(gameObject, 0.05f);
-            SceneManager.LoadScene("Menu");
+            SceneManager.LoadScene("GameOver");
 
         }
     }

@@ -8,12 +8,18 @@ public class Alavanca : MonoBehaviour
     private bool isActivated = false;
     private bool playerInRange = false;
     public KeyCode interactionKey = KeyCode.E;
+    public SpriteRenderer sr;
 
+    private void Start()
+    {
+        sr = GetComponent<SpriteRenderer>();
+    }
     private void Update()
     {
         if (playerInRange && Input.GetKeyDown(interactionKey))
         {
             ToggleLever();
+            sr.flipX = true;
             Debug.Log("Abriu porta");
             Destroy(Porta, 1.0f);
             
