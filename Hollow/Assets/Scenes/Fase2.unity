@@ -1494,6 +1494,7 @@ GameObject:
   - component: {fileID: 631032008}
   - component: {fileID: 631032007}
   - component: {fileID: 631032012}
+  - component: {fileID: 631032013}
   m_Layer: 0
   m_Name: Protagonista
   m_TagString: Player
@@ -1639,7 +1640,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4b36782bb43550d4b9018676c41ac3f6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c330bdcf0b921694bb25106f344fac40, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1686,6 +1687,28 @@ MonoBehaviour:
   - {fileID: 34602132}
   cheio: {fileID: 7374879894619327383, guid: 2803a6e746933504b93ab8af55a59910, type: 3}
   vazio: {fileID: 21300000, guid: 8ead6d08e08a2e3448758ae1a786ad09, type: 3}
+--- !u!95 &631032013
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631032006}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0e6f9408a523dfd449745c554def4f41, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &788293436
 GameObject:
   m_ObjectHideFlags: 0

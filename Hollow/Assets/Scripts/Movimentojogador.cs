@@ -20,6 +20,7 @@ public class Movimentojogador : MonoBehaviour
     private bool estanochao;
     private float inputHorizontal;
     private bool desejaPular;
+    private Animator anim;
 
     void Update()
     {
@@ -49,6 +50,11 @@ public class Movimentojogador : MonoBehaviour
             ospriterenderer.flipX = false;
         else if (inputHorizontal < 0)
             ospriterenderer.flipX = true;
+    }
+
+    void MoveLogic()
+    {
+        anim.SetFloat("Horizontal", origidbody2D.linearVelocity.x);
     }
 
     void VerificarChao()
