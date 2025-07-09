@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameOver : MonoBehaviour
 {
     [SerializeField] private string nomeDoleveldojogo;
+    [SerializeField] private string nomeDoleveldojogo2;
     [SerializeField] private GameObject painelmenuinicial;
 
     public void Renascer()
@@ -16,6 +17,6 @@ public class GameOver : MonoBehaviour
     public void sairjogo()
     {
         Debug.Log("Sair do jogo");
-        Application.Quit();
+        SceneManager.LoadScene(nomeDoleveldojogo2);
     }
 }
