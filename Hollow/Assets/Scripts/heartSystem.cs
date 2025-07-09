@@ -44,8 +44,8 @@ public class heartSystem : MonoBehaviour
     {
         if (vidaAtual <= 0)
         {
-            Destroy(gameObject, 0.05f);
             SceneManager.LoadScene("GameOver");
+            
 
         }
     }
