@@ -20,7 +20,7 @@ public class Movimentojogador : MonoBehaviour
     private bool estanochao;
     private float inputHorizontal;
     private bool desejaPular;
-    [SerializeField] private Animation anim;
+    [SerializeField] private Animator anim;
 
     void Update()
     {
@@ -32,6 +32,8 @@ public class Movimentojogador : MonoBehaviour
         {
             desejaPular = true;
         }
+        moveanim();
+        
     }
 
     void FixedUpdate()
@@ -63,6 +65,10 @@ public class Movimentojogador : MonoBehaviour
         {
             origidbody2D.linearVelocity = Vector2.up * alturadopulo;
         }
+    }
+    void moveanim()
+    {
+        anim.SetFloat("Horizontal", origidbody2D.linearVelocity.x);
     }
 
     void OnDrawGizmosSelected()

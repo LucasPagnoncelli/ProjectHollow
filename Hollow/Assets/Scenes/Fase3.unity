@@ -778,7 +778,7 @@ MonoBehaviour:
   layerchao:
     serializedVersion: 2
     m_Bits: 128
-  anim: {fileID: 0}
+  anim: {fileID: 631032013}
 --- !u!61 &631032008
 BoxCollider2D:
   m_ObjectHideFlags: 0
