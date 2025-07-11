@@ -32,6 +32,18 @@ public class Movimentojogador : MonoBehaviour
         {
             desejaPular = true;
         }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            desejaPular = true;
+        }
+        if ((Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift)) && (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)) && estanochao==true)
+        {
+            velocidadedojogador = 8f;
+        }
+        else
+        {
+        velocidadedojogador = 5f;
+        }
         moveanim();
         
     }
@@ -46,6 +58,7 @@ public class Movimentojogador : MonoBehaviour
 
     void MovimentarJogador()
     {
+
         origidbody2D.linearVelocity = new Vector2(inputHorizontal * velocidadedojogador, origidbody2D.linearVelocity.y);
 
         if (inputHorizontal > 0)
