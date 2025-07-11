@@ -475,8 +475,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b101f0d915913e40b3b277e98f16b71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadedojogador: 8
-  alturadopulo: 8
+  velocidadedojogador: 3
+  alturadopulo: 7
   origidbody2D: {fileID: 631032009}
   ospriterenderer: {fileID: 631032010}
   verificadorDeChao: {fileID: 446796252}
@@ -885,7 +885,7 @@ Transform:
   m_GameObject: {fileID: 1187269313}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.6056119, y: -1.5233624, z: 0}
+  m_LocalPosition: {x: -0.78, y: -1.52, z: 0}
   m_LocalScale: {x: 0.099844076, y: 0.095436856, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
