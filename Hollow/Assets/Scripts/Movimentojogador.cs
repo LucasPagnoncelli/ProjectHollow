@@ -45,6 +45,7 @@ public class Movimentojogador : MonoBehaviour
         velocidadedojogador = 5f;
         }
         moveanim();
+        jumpanim();
         
     }
 
@@ -82,6 +83,11 @@ public class Movimentojogador : MonoBehaviour
     void moveanim()
     {
         anim.SetFloat("Horizontal", origidbody2D.linearVelocity.x);
+    }
+    void jumpanim()
+    {
+        anim.SetFloat("Vertical", origidbody2D.linearVelocity.y);
+        anim.SetBool("chao", estanochao);
     }
 
     void OnDrawGizmosSelected()
