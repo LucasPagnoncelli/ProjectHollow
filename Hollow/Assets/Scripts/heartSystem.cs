@@ -1,13 +1,11 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
+
 
 public class heartSystem : MonoBehaviour
 {
     public int vidaAtual;
-    public int vidaMaxima;
-
     public Image[] coracao;
     public Sprite cheio;
     public Sprite vazio;
@@ -15,13 +13,14 @@ public class heartSystem : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        vidaAtual = Gamemaneger.instance.Vida;
     }
 
     // Update is called once per frame
     void Update()
     {
         HealthLogic();   
+        
     }
 
     void HealthLogic()
@@ -49,4 +48,5 @@ public class heartSystem : MonoBehaviour
 
         }
     }
+    public void dano() => Gamemaneger.instance.perdervida();
 }

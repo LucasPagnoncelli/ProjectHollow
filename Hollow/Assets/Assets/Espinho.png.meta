@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a54e67525df25654eb8aa88cfd8d6f1a
+guid: 3c0fb9f63616d1d42b9338079e9ed2b3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5329187032394576076
-    second: Fundo1.1_0
+      213: 6744104265820592144
+    second: Espinho_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fundo1.1_0
+      name: Espinho_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1088
-        height: 288
+        width: 32
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cc03f77ee5315f940800000000000000
-      internalID: 5329187032394576076
+      spriteID: 018de64191fd79d50800000000000000
+      internalID: 6744104265820592144
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Fundo1.1_0: 5329187032394576076
+      Espinho_0: 6744104265820592144
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

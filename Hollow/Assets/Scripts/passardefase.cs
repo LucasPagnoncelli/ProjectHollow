@@ -4,6 +4,7 @@ using System.Collections;
 
 public class passardefase : MonoBehaviour
 {
+    
     void Start()
     {
         
@@ -17,6 +18,7 @@ public class passardefase : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
