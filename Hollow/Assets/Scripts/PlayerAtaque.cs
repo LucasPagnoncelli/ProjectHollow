@@ -6,6 +6,7 @@ public class PlayerAtaque : MonoBehaviour
     public float ataqueRange = 0.5f;
     public LayerMask enemyLayers;
     private bool atacando;
+    [SerializeField] private Animator anim;
 
     void Update()
     {
@@ -13,7 +14,9 @@ public class PlayerAtaque : MonoBehaviour
         if (atacando)
         {
             Ataque();
+            
         }
+        
     }
 
     void Ataque()
@@ -27,6 +30,7 @@ public class PlayerAtaque : MonoBehaviour
                 inimigo.DanoNoInimigo(1);
             }
         }
+        ataqueanim();
     }
 
     private void OnDrawGizmosSelected()
@@ -36,5 +40,9 @@ public class PlayerAtaque : MonoBehaviour
             Gizmos.color = Color.red;
             Gizmos.DrawWireSphere(ataquePoint.position, ataqueRange);
         }
+    }
+    void ataqueanim()
+    {
+        anim.SetTrigger("ataque");
     }
 }

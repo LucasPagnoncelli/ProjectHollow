@@ -3047,6 +3047,7 @@ GameObject:
   - component: {fileID: 631032007}
   - component: {fileID: 631032012}
   - component: {fileID: 631032013}
+  - component: {fileID: 631032014}
   m_Layer: 0
   m_Name: Protagonista
   m_TagString: Player
@@ -3262,6 +3263,24 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &631032014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631032006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65e810ade37b5244cb83a6b4fbe442eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ataquePoint: {fileID: 0}
+  ataqueRange: 0.5
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  anim: {fileID: 0}
 --- !u!1 &788293436
 GameObject:
   m_ObjectHideFlags: 0
