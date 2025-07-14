@@ -1,4 +1,4 @@
- using UnityEngine;
+using UnityEngine;
 
 public class triggerDamage : MonoBehaviour
 {
@@ -9,7 +9,7 @@ public class triggerDamage : MonoBehaviour
         {
             heartSystem.vidaAtual--;
             heartSystem.dano();
-            
+
         }
     }
 }

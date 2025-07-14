@@ -19,8 +19,8 @@ public class heartSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        HealthLogic();   
-        
+        HealthLogic();
+
     }
 
     void HealthLogic()
@@ -28,7 +28,8 @@ public class heartSystem : MonoBehaviour
         for (int i = 0; i < coracao.Length; i++)
         {
 
-            if (vidaAtual > i){
+            if (vidaAtual > i)
+            {
                 coracao[i].enabled = true;
             }
             else
@@ -44,7 +45,7 @@ public class heartSystem : MonoBehaviour
         if (vidaAtual <= 0)
         {
             SceneManager.LoadScene("GameOver");
-            
+
 
         }
     }
