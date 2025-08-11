@@ -1,9 +1,9 @@
 using UnityEngine;
 
-public class Inimigo : MonoBehaviour
+public class Boss : MonoBehaviour
 {
-    public int vidaAtual;
-    public GameObject Porta;
+    private int vidaAtual = 5;
+    private GameObject Porta;
     
     public void DanoNoInimigo(int dano)
     {
