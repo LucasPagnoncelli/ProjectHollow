@@ -20,6 +20,9 @@ public class passardefase : MonoBehaviour
         {
 
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
+
+
         }
     }
 }
