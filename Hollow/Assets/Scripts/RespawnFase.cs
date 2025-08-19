@@ -25,6 +25,7 @@ public class RespawnFase : MonoBehaviour
     {
         if (collision.CompareTag("Player") && SceneManager.GetActiveScene().buildIndex == 2)
         {
+
             Gamemaneger.instance.voltar();
             fase++;
         }
