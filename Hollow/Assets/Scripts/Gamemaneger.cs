@@ -7,20 +7,16 @@ public class Gamemaneger : MonoBehaviour
 
     private int vida = 4;
     private int fase2 = 0;
-    private int fase3 = 0;
+    
 
     public void voltar()
     {
         
-    fase2++;
+        fase2++;
+        
         
     }
-    public void voltar3()
-    {
-
-        fase3++;
-
-    }
+    
     public int Vida
     {
         get
@@ -35,13 +31,7 @@ public class Gamemaneger : MonoBehaviour
             return fase2;
         }
     }
-    public int Fase3
-    {
-        get
-        {
-            return fase3;
-        }
-    }
+   
     private void Awake()
     {
         if(instance == null)
@@ -56,10 +46,15 @@ public class Gamemaneger : MonoBehaviour
     public void perdervida()
     {
         vida--;
-        if(vida == 0)
+        if(vida == 0 )
         {
             vida = 4;
         }
+    }
+    public void Reset()
+    {
+        vida = 4;
+        fase2 = 0;
     }
 
 

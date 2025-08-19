@@ -1,4 +1,3 @@
-using UnityEditor.Rendering;
 using UnityEngine;
 
 public class Alavanca : MonoBehaviour
@@ -47,16 +46,7 @@ public class Alavanca : MonoBehaviour
     private void ToggleLever()
     {
         isActivated = !isActivated;
-        // Rotaciona a alavanca ao interagir
-        if (isActivated)
-        {
-            
-            //LeanTween.rotateZ(gameObject, transform.eulerAngles.z + 90f, 0.5f); // Rotação da alavanca usando LeanTween
-        }
-        else
-        {
-            //LeanTween.rotateZ(gameObject, transform.eulerAngles.z - 90f, 0.5f); // Rotação da alavanca ao desativar
-        }
+        
 
         //Chama a função para abrir ou fechar a porta
         Porta doorController = Porta.GetComponent<Porta>();

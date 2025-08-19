@@ -12,11 +12,13 @@ public class GameOver : MonoBehaviour
     public void Renascer()
     {
         SceneManager.LoadScene(nomeDoleveldojogo);
+        Gamemaneger.instance.Reset();   
     }
     
     public void sairjogo()
     {
         Debug.Log("Sair do jogo");
+        Gamemaneger.instance.Reset();
         SceneManager.LoadScene(nomeDoleveldojogo2);
     }
 }
