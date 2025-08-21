@@ -7,16 +7,23 @@ public class PlayerAtaque : MonoBehaviour
     public LayerMask enemyLayers;
     private bool atacando;
     [SerializeField] private Animator anim;
+    [SerializeField]
+    public float cooldownDuration;
+    public float nextActivationTime;
 
     void Update()
     {
         atacando = Input.GetKeyDown(KeyCode.Z);
-        if (atacando)
+        
+        if (Time.time >= nextActivationTime && atacando)
         {
+            
             Ataque();
             
+            nextActivationTime = Time.time + cooldownDuration;
         }
-        
+
+
     }
 
     void Ataque()
@@ -24,8 +31,8 @@ public class PlayerAtaque : MonoBehaviour
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(ataquePoint.position, ataqueRange, enemyLayers);
         foreach (Collider2D enemy in hitEnemies)
         {
-        Inimigo inimigo = enemy.GetComponent<Inimigo>();
-        Boss boss = enemy.GetComponent<Boss>();
+            Inimigo inimigo = enemy.GetComponent<Inimigo>();
+            Boss boss = enemy.GetComponent<Boss>();
             if (inimigo != null)
             {
                 inimigo.DanoNoInimigo(1);

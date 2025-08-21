@@ -1182,6 +1182,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   anim: {fileID: 631032013}
+  cooldownDuration: 0.5
+  nextActivationTime: 0
 --- !u!1 &766279638
 GameObject:
   m_ObjectHideFlags: 0
