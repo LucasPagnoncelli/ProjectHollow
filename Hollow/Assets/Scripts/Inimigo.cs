@@ -2,12 +2,12 @@ using UnityEngine;
 
 public class Inimigo : MonoBehaviour
 {
-    public int vidaAtual;
-    public GameObject Porta;
+    public int vidaAtual = 5;
+    
 
 
     public float velocidade = 2f;
-    private bool faceFlip = true; // controle de virada
+    private bool faceFlip =true ; // controle de virada
     private Rigidbody2D rb;
 
     void Start()
@@ -23,7 +23,7 @@ public class Inimigo : MonoBehaviour
     private void Mover()
     {
         float direcao = faceFlip ? 1 : -1;
-        rb.velocity = new Vector2(direcao * velocidade, rb.velocity.y);
+        rb.linearVelocity = new Vector2(direcao * velocidade, rb.linearVelocityY);
     }
 
     private void flipEnemy()
@@ -38,7 +38,7 @@ public class Inimigo : MonoBehaviour
     {
         if (!collision.collider.CompareTag("Player") || !collision.collider.CompareTag("Chao"))
         {
-            faceFlip = !faceFlip; // agora funciona, é bool
+            faceFlip = !faceFlip;
             flipEnemy();
         }
     }
@@ -47,10 +47,12 @@ public class Inimigo : MonoBehaviour
     public void DanoNoInimigo(int dano)
     {
         vidaAtual -= dano;
+        faceFlip = !faceFlip;
+        flipEnemy();
         if (vidaAtual <= 0)
         {
             Destroy(this.gameObject);
-            Destroy(Porta);
+           
         }
     }
 }

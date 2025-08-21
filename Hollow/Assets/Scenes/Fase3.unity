@@ -766,9 +766,9 @@ GameObject:
   - component: {fileID: 459323202}
   - component: {fileID: 459323201}
   - component: {fileID: 459323204}
-  - component: {fileID: 459323203}
   - component: {fileID: 459323205}
   - component: {fileID: 459323206}
+  - component: {fileID: 459323207}
   m_Layer: 9
   m_Name: Boss
   m_TagString: Untagged
@@ -846,20 +846,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &459323203
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 459323200}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31d34e889ca26cb4c90dcb7e21294773, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vidaAtual: 5
-  Porta: {fileID: 103060280}
 --- !u!61 &459323204
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -932,11 +918,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   respawn: {fileID: 1080268391}
-  respawnfase: {fileID: 0}
-  respawnfase3: {fileID: 0}
-  Porta: {fileID: 0}
-  fase: 0
-  fase3: 0
+--- !u!114 &459323207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 459323200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d1dd01db23bd4d41a33c31e815c3bb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidaAtual: 5
+  Porta: {fileID: 103060280}
 --- !u!1 &631032006
 GameObject:
   m_ObjectHideFlags: 0
@@ -1182,7 +1177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ataquePoint: {fileID: 1793383711}
-  ataqueRange: 1
+  ataqueRange: 1.1
   enemyLayers:
     serializedVersion: 2
     m_Bits: 512
@@ -1625,7 +1620,7 @@ Transform:
   m_GameObject: {fileID: 1793383710}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.3, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

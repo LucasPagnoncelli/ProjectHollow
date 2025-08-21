@@ -24,10 +24,15 @@ public class PlayerAtaque : MonoBehaviour
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(ataquePoint.position, ataqueRange, enemyLayers);
         foreach (Collider2D enemy in hitEnemies)
         {
-            Inimigo inimigo = enemy.GetComponent<Inimigo>();
+        Inimigo inimigo = enemy.GetComponent<Inimigo>();
+        Boss boss = enemy.GetComponent<Boss>();
             if (inimigo != null)
             {
                 inimigo.DanoNoInimigo(1);
+            }
+            if (boss != null)
+            {
+                boss.DanoNoInimigo(1);
             }
         }
         ataqueanim();
