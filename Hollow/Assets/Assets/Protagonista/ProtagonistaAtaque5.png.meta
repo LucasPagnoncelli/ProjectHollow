@@ -5,6 +5,9 @@ TextureImporter:
   - first:
       213: 9222612571557004357
     second: ProtagonistaAtaque5_0
+  - first:
+      213: -531261101199253713
+    second: ProtagonistaAtaque5_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,9 +106,9 @@ TextureImporter:
       name: ProtagonistaAtaque5_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 3
         y: 0
-        width: 32
+        width: 53
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -117,6 +120,28 @@ TextureImporter:
       bones: []
       spriteID: 54405b4354d4dff70800000000000000
       internalID: 9222612571557004357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProtagonistaAtaque5_1
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 4
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2f190cd7d490a8f0800000000000000
+      internalID: -531261101199253713
       vertices: []
       indices: 
       edges: []
@@ -136,6 +161,7 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       ProtagonistaAtaque5_0: 9222612571557004357
+      ProtagonistaAtaque5_1: -531261101199253713
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
