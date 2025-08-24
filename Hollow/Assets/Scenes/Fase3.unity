@@ -840,7 +840,7 @@ Transform:
   m_GameObject: {fileID: 459323200}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.37, y: -1.4424152, z: 0}
+  m_LocalPosition: {x: 5.72, y: -1.4424152, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -932,6 +932,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vidaAtual: 5
   Porta: {fileID: 103060280}
+  rend: {fileID: 459323201}
 --- !u!1 &631032006
 GameObject:
   m_ObjectHideFlags: 0
@@ -1142,6 +1143,7 @@ MonoBehaviour:
   - {fileID: 1969964435}
   cheio: {fileID: 7374879894619327383, guid: 2803a6e746933504b93ab8af55a59910, type: 3}
   vazio: {fileID: 21300000, guid: 8ead6d08e08a2e3448758ae1a786ad09, type: 3}
+  rend: {fileID: 631032010}
 --- !u!95 &631032013
 Animator:
   serializedVersion: 7

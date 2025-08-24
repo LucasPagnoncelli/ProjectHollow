@@ -61,7 +61,7 @@ public class Inimigo : MonoBehaviour
     {
         rend.color = Color.red;
 
-        Invoke("NormalizaCor", 0.5f); //tempo para voltar a cor normal
+        Invoke("NormalizaCor", 0.2f); //tempo para voltar a cor normal
     }
 
     void NormalizaCor()
