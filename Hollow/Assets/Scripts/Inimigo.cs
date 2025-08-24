@@ -9,6 +9,7 @@ public class Inimigo : MonoBehaviour
     public float velocidade = 2f;
     private bool faceFlip =true ; // controle de virada
     private Rigidbody2D rb;
+    public SpriteRenderer rend;
 
     void Start()
     {
@@ -47,12 +48,24 @@ public class Inimigo : MonoBehaviour
     public void DanoNoInimigo(int dano)
     {
         vidaAtual -= dano;
-        faceFlip = !faceFlip;
-        flipEnemy();
+        MudaCor();
+        
+        
         if (vidaAtual <= 0)
         {
             Destroy(this.gameObject);
            
         }
+    }
+    void MudaCor()
+    {
+        rend.color = Color.red;
+
+        Invoke("NormalizaCor", 0.5f); //tempo para voltar a cor normal
+    }
+
+    void NormalizaCor()
+    {
+        rend.color = Color.white;
     }
 }

@@ -9,6 +9,7 @@ public class heartSystem : MonoBehaviour
     public Image[] coracao;
     public Sprite cheio;
     public Sprite vazio;
+    public SpriteRenderer rend;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -49,5 +50,21 @@ public class heartSystem : MonoBehaviour
 
         }
     }
-    public void dano() => Gamemaneger.instance.perdervida();
+    public void dano()
+    {
+        MudaCor();
+        Gamemaneger.instance.perdervida();
+        
+    }
+    void MudaCor()
+    {
+        rend.color = Color.red;
+
+        Invoke("NormalizaCor", 0.5f); //tempo para voltar a cor normal
+    }
+
+    void NormalizaCor()
+    {
+        rend.color = Color.white;
+    }
 }
