@@ -13,7 +13,7 @@ public class PlayerAtaque : MonoBehaviour
 
     void Update()
     {
-        atacando = Input.GetKeyDown(KeyCode.Z);
+        atacando = Input.GetKeyDown(KeyCode.K);
         
         if (Time.time >= nextActivationTime && atacando)
         {
