@@ -6,6 +6,7 @@ public class InteracaoTexto : MonoBehaviour
     public GameObject caixaDeTexto; // painel da UI
     public TextMeshProUGUI textoTMP; // texto dentro da caixa
     public string mensagem = "Olá"; // mensagem exibida
+    
 
     private bool jogadorPerto = false;
 
