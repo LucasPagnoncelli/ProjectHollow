@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: b802fd5205b08d64ea0c74b417c8ae70
+guid: a64ea8e6792ed4549995a41f6a9fd8fa
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1142327357422757197
-    second: Boss ataque_0
+      213: -4767077649908713965
+    second: Espinho5_0
+  - first:
+      213: 7179079692071068908
+    second: Espinho5_1
+  - first:
+      213: -1109039489310436532
+    second: Espinho5_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Boss ataque_0
+      name: Espinho5_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 6
         y: 0
-        width: 91
-        height: 93
+        width: 19
+        height: 55
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +121,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d45e464edac5adf00800000000000000
-      internalID: 1142327357422757197
+      spriteID: 316bc7c6220f7ddb0800000000000000
+      internalID: -4767077649908713965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espinho5_1
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 0
+        width: 22
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce4ed1c81f631a360800000000000000
+      internalID: 7179079692071068908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espinho5_2
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 0
+        width: 28
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4355cdd576eb90f0800000000000000
+      internalID: -1109039489310436532
       vertices: []
       indices: 
       edges: []
@@ -135,7 +185,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Boss ataque_0: 1142327357422757197
+      Espinho5_0: -4767077649908713965
+      Espinho5_1: 7179079692071068908
+      Espinho5_2: -1109039489310436532
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

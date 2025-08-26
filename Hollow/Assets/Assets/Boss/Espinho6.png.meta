@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 7fac53b5a5f1d98499d28b7b739e6805
+guid: b9cd44f18cf14354aaabce3b1336c59b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6248741079362886434
-    second: Boss_0
+      213: 3515686685916481021
+    second: Espinho6_0
+  - first:
+      213: 1361998315937164350
+    second: Espinho6_1
+  - first:
+      213: -8510073571599959827
+    second: Espinho6_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Boss_0
+      name: Espinho6_0
       rect:
         serializedVersion: 2
-        x: 24
+        x: 4
         y: 0
-        width: 67
-        height: 93
+        width: 26
+        height: 77
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +121,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ed42f2778130849a0800000000000000
-      internalID: -6248741079362886434
+      spriteID: df54f97f96a3ac030800000000000000
+      internalID: 3515686685916481021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espinho6_1
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 0
+        width: 33
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3c6d1e804ac6e210800000000000000
+      internalID: 1361998315937164350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Espinho6_2
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 0
+        width: 31
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de83858cc2526e980800000000000000
+      internalID: -8510073571599959827
       vertices: []
       indices: 
       edges: []
@@ -135,7 +185,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Boss_0: -6248741079362886434
+      Espinho6_0: 3515686685916481021
+      Espinho6_1: 1361998315937164350
+      Espinho6_2: -8510073571599959827
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
