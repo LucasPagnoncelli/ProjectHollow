@@ -818,8 +818,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -17493555
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f031b1c20caaf984ba5dc7aa11617f0e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -905,7 +905,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08a661f89d6c573438c46386eb2cb477, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heartSystem: {fileID: 631032012}
 --- !u!114 &459323206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -931,9 +930,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d1dd01db23bd4d41a33c31e815c3bb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vidaAtual: 5
+  vidaAtual: 30
   Porta: {fileID: 103060280}
   rend: {fileID: 459323201}
+  bullet: {fileID: 2006745335265846331, guid: 86aa9fd7505c18141b8017b0e78ee524, type: 3}
+  SpawnShot: {fileID: 1817489224}
+  minYforce: 8
+  MaxYforce: 15
+  minrate: 0.5
+  maxrate: 1.25
+  espinhos: {fileID: 5161060639431275333, guid: cc3cd00585347174ea76e4854f55e024, type: 3}
+  espinhosSpawn: {fileID: 1842540426}
+  minTime: 5
+  maxTime: 8
 --- !u!95 &459323208
 Animator:
   serializedVersion: 7
@@ -1138,7 +1147,7 @@ Transform:
   m_GameObject: {fileID: 631032006}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.29, y: 2.56, z: 2.1973958}
+  m_LocalPosition: {x: 11.27, y: 2.47, z: 2.1973958}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1653,6 +1662,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 631032011}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1817489223
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1817489224}
+  m_Layer: 0
+  m_Name: Spawnshot
+  m_TagString: Untagged
+  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1817489224
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1817489223}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.28, y: -0.648, z: 0.28209466}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1820591245
 GameObject:
   m_ObjectHideFlags: 0
@@ -1801,7 +1841,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f031b1c20caaf984ba5dc7aa11617f0e, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1809,7 +1849,7 @@ SpriteRenderer:
   m_Size: {x: 4, y: 4}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1820591251
@@ -1834,6 +1874,37 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &1842540425
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1842540426}
+  m_Layer: 0
+  m_Name: SpawnEspinhos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1842540426
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842540425}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.563, y: -1.508, z: 0.2834022}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1866782033
 GameObject:
   m_ObjectHideFlags: 0
@@ -1997,3 +2068,5 @@ SceneRoots:
   - {fileID: 103060282}
   - {fileID: 284077174}
   - {fileID: 1080268391}
+  - {fileID: 1817489224}
+  - {fileID: 1842540426}

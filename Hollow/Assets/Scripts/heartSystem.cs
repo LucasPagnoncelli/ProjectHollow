@@ -21,7 +21,7 @@ public class heartSystem : MonoBehaviour
     void Update()
     {
         HealthLogic();
-
+       
     }
 
     void HealthLogic()
