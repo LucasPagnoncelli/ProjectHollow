@@ -1327,8 +1327,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000015259, y: 334}
-  m_SizeDelta: {x: 1351.228, y: 150.769}
+  m_AnchoredPosition: {x: -0.000015259, y: 338}
+  m_SizeDelta: {x: 1302.2859, y: 150.769}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &876413604
 MonoBehaviour:
@@ -1350,7 +1350,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Carmesim Shadow
+  m_text: 'Crimson Shadow
 
 '
   m_isRightToLeft: 0
@@ -1385,7 +1385,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 5
+  m_fontStyle: 33
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -1417,7 +1417,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -23.269653, w: 0}
+  m_margin: {x: 0, y: 0, z: 1.2014774, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2085,6 +2085,7 @@ GameObject:
   - component: {fileID: 1618594248}
   - component: {fileID: 1618594247}
   - component: {fileID: 1618594246}
+  - component: {fileID: 1618594250}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2178,6 +2179,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1618594250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1618594245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92cdbed60f4694145b09b0bae78e09b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fn: 1
 --- !u!1 &1718675412
 GameObject:
   m_ObjectHideFlags: 0
