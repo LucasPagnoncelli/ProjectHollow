@@ -10,6 +10,8 @@ public class PlayerAtaque : MonoBehaviour
     [SerializeField]
     public float cooldownDuration;
     public float nextActivationTime;
+    public AudioSource somataque;
+    public AudioSource somdano;
 
     void Update()
     {
@@ -36,13 +38,21 @@ public class PlayerAtaque : MonoBehaviour
             if (inimigo != null)
             {
                 inimigo.DanoNoInimigo(1);
+                somdano.Play();
+
             }
+            
+           
             if (boss != null)
             {
                 boss.DanoNoInimigo(1);
+                somdano.Play();
             }
+           
         }
         ataqueanim();
+        somataque.Play();
+
     }
 
     private void OnDrawGizmosSelected()

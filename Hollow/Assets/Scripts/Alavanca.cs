@@ -8,6 +8,7 @@ public class Alavanca : MonoBehaviour
     private bool playerInRange = false;
     public KeyCode interactionKey = KeyCode.E;
     public SpriteRenderer sr;
+    public AudioSource som;
 
     private void Start()
     {
@@ -19,6 +20,7 @@ public class Alavanca : MonoBehaviour
         {
             ToggleLever();
             sr.flipX = true;
+            som.Play();
             Debug.Log("Abriu porta");
             Destroy(Porta, 1.0f);
             

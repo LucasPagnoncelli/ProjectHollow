@@ -6,10 +6,12 @@ using UnityEngine.UI;
 public class heartSystem : MonoBehaviour
 {
     public int vidaAtual;
+    public AudioSource somdano;
     public Image[] coracao;
     public Sprite cheio;
     public Sprite vazio;
     public SpriteRenderer rend;
+    
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -53,6 +55,7 @@ public class heartSystem : MonoBehaviour
     public void dano()
     {
         MudaCor();
+        somdano.Play();
         Gamemaneger.instance.perdervida();
         
     }

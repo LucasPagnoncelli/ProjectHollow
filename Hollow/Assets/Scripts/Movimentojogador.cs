@@ -21,6 +21,8 @@ public class Movimentojogador : MonoBehaviour
     private float inputHorizontal;
     private bool desejaPular;
     [SerializeField] private Animator anim;
+    public AudioSource sompulo;
+    public AudioSource somandar;
 
     void Update()
     {
@@ -66,6 +68,10 @@ public class Movimentojogador : MonoBehaviour
             ospriterenderer.flipX = false;
         else if (inputHorizontal < 0)
             ospriterenderer.flipX = true;
+
+      
+        
+
     }
 
     void VerificarChao()
@@ -78,6 +84,7 @@ public class Movimentojogador : MonoBehaviour
         if (desejaPular && estanochao)
         {
             origidbody2D.linearVelocity = Vector2.up * alturadopulo;
+            sompulo.Play();
         }
     }
     void moveanim()
