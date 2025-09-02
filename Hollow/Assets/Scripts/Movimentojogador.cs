@@ -24,6 +24,7 @@ public class Movimentojogador : MonoBehaviour
     public AudioSource sompulo;
     public AudioSource somandar;
 
+
     void Update()
     {
         // Captura do input de movimento
@@ -48,7 +49,7 @@ public class Movimentojogador : MonoBehaviour
         }
         moveanim();
         jumpanim();
-        
+       
     }
 
     void FixedUpdate()
