@@ -24,6 +24,11 @@ public class Movimentojogador : MonoBehaviour
     public AudioSource sompulo;
     public AudioSource somandar;
 
+    public float kbForce;
+    public float kbCount;
+    public float kbTime;
+    public bool isKnockRight;
+
 
     void Update()
     {
@@ -57,8 +62,10 @@ public class Movimentojogador : MonoBehaviour
         VerificarChao();
         MovimentarJogador();
         Pular();
-        desejaPular = false; // Reset da flag após aplicar
+        desejaPular = false;
     }
+
+    
 
     void MovimentarJogador()
     {

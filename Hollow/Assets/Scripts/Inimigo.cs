@@ -10,6 +10,8 @@ public class Inimigo : MonoBehaviour
     private bool faceFlip =true ; // controle de virada
     private Rigidbody2D rb;
     public SpriteRenderer rend;
+    public Movimentojogador player;
+
 
     void Start()
     {
@@ -37,11 +39,12 @@ public class Inimigo : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (!collision.collider.CompareTag("Player") || !collision.collider.CompareTag("Chao"))
+        if (collision.collider.CompareTag("Chao"))
         {
             faceFlip = !faceFlip;
             flipEnemy();
         }
+        
     }
 
 
